@@ -1,0 +1,80 @@
+{
+  "machine": "Apple M1 Pro, 10 cores, 16 GB RAM",
+  "runs": [
+    {
+      "n": 1000,
+      "features": 43,
+      "records_equiv": 43000,
+      "wall_s": 31.225170582998544,
+      "peak_mb": 638.21875,
+      "flagged": 0,
+      "timings": {
+        "preprocess": 0.018124458998499904,
+        "detect": 2.0843313330005913,
+        "calibrate": 21.494093875000544,
+        "boot_trim": 0.1,
+        "umap_hdbscan": 7.626687208001385
+      }
+    },
+    {
+      "n": 5000,
+      "features": 43,
+      "records_equiv": 215000,
+      "wall_s": 52.02461770900118,
+      "peak_mb": 947.09375,
+      "flagged": 305,
+      "timings": {
+        "preprocess": 0.02775870899859001,
+        "detect": 7.491340332999243,
+        "calibrate": 23.710611374997825,
+        "boot_trim": 0.1,
+        "umap_hdbscan": 20.7917110840026
+      }
+    },
+    {
+      "n": 10000,
+      "features": 43,
+      "records_equiv": 430000,
+      "wall_s": 77.50786349999908,
+      "peak_mb": 936.171875,
+      "flagged": 570,
+      "timings": {
+        "preprocess": 0.039260124998691026,
+        "detect": 10.986841249999998,
+        "calibrate": 35.491558625002654,
+        "boot_trim": 0.1,
+        "umap_hdbscan": 30.986065958000836
+      }
+    },
+    {
+      "n": 25000,
+      "features": 43,
+      "records_equiv": 1075000,
+      "wall_s": 125.31207954099955,
+      "peak_mb": 1016.296875,
+      "flagged": 1201,
+      "timings": {
+        "preprocess": 0.07162525000239839,
+        "detect": 21.249046375000034,
+        "calibrate": 69.6652842500007,
+        "boot_trim": 0.1,
+        "umap_hdbscan": 34.313246375000745
+      }
+    },
+    {
+      "n": 50000,
+      "features": 43,
+      "records_equiv": 2150000,
+      "wall_s": 238.05274204200032,
+      "peak_mb": 1180.671875,
+      "flagged": 2654,
+      "timings": {
+        "preprocess": 0.1252506250020815,
+        "detect": 19.998378749998665,
+        "calibrate": 72.6371528339987,
+        "boot_trim": 0.13468,
+        "umap_hdbscan": 145.27371550000316
+      }
+    }
+  ]
+}

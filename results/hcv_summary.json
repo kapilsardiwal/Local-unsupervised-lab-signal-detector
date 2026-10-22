@@ -1,0 +1,83 @@
+{
+  "n_flagged": 38,
+  "ppv_flagged": 0.8947368421052632,
+  "auroc": 0.9534388871093213,
+  "auprc": 0.7608825755983726,
+  "precision_at_k": 0.7195121951219512,
+  "detected_by_group": {
+    "Blood Donor": {
+      "sum": 4,
+      "size": 533
+    },
+    "Cirrhosis": {
+      "sum": 23,
+      "size": 30
+    },
+    "Fibrosis": {
+      "sum": 1,
+      "size": 21
+    },
+    "Hepatitis": {
+      "sum": 3,
+      "size": 24
+    },
+    "suspect Blood Donor": {
+      "sum": 7,
+      "size": 7
+    }
+  },
+  "n": 615,
+  "n_disease": 82,
+  "auroc_glosh": 0.31168489452249115,
+  "ari_clusters_vs_group": 0.6741710577475359,
+  "n_clusters": 2,
+  "cluster_by_group": {
+    "Blood Donor": {
+      "0": 1,
+      "1": 532
+    },
+    "Cirrhosis": {
+      "0": 22,
+      "1": 8
+    },
+    "Fibrosis": {
+      "0": 11,
+      "1": 10
+    },
+    "Hepatitis": {
+      "0": 16,
+      "1": 8
+    },
+    "suspect Blood Donor": {
+      "0": 0,
+      "1": 7
+    }
+  },
+  "timings_s": {
+    "preprocess": 0.0056631249990459764,
+    "detect": 0.6386866249995364,
+    "calibrate": 11.240513499998997,
+    "boot_trim": 0.1,
+    "umap_hdbscan": 7.150880000001052
+  },
+  "ablation": {
+    "IF+LOF, all features": {
+      "n_flagged": 10,
+      "ppv_flagged": 0.8,
+      "auroc": 0.9432114583810003,
+      "auprc": 0.7059796764913814
+    },
+    "IF+LOF+PCA, all features": {
+      "n_flagged": 34,
+      "ppv_flagged": 0.8823529411764706,
+      "auroc": 0.9502585457374273,
+      "auprc": 0.7556816740676806
+    },
+    "IF+LOF+PCA, organ panels": {
+      "n_flagged": 38,
+      "ppv_flagged": 0.8947368421052632,
+      "auroc": 0.9534388871093213,
+      "auprc": 0.7608825755983726
+    }
+  }
+}

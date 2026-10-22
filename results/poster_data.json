@@ -1,0 +1,466 @@
+{
+  "hcv": {
+    "n": 615,
+    "n_disease": 82,
+    "n_flagged": 38,
+    "ppv": 0.8947368421052632,
+    "auroc": 0.9534388871093213,
+    "auprc": 0.7608825755983726,
+    "groups": [
+      {
+        "name": "Blood donor",
+        "found": 4,
+        "size": 533
+      },
+      {
+        "name": "Suspect donor",
+        "found": 7,
+        "size": 7
+      },
+      {
+        "name": "Hepatitis C",
+        "found": 3,
+        "size": 24
+      },
+      {
+        "name": "Fibrosis",
+        "found": 1,
+        "size": 21
+      },
+      {
+        "name": "Cirrhosis",
+        "found": 23,
+        "size": 30
+      }
+    ],
+    "ablation": {
+      "IF+LOF, all features": {
+        "n_flagged": 10,
+        "ppv_flagged": 0.8,
+        "auroc": 0.9432114583810003,
+        "auprc": 0.7059796764913814
+      },
+      "IF+LOF+PCA, all features": {
+        "n_flagged": 34,
+        "ppv_flagged": 0.8823529411764706,
+        "auroc": 0.9502585457374273,
+        "auprc": 0.7556816740676806
+      },
+      "IF+LOF+PCA, organ panels": {
+        "n_flagged": 38,
+        "ppv_flagged": 0.8947368421052632,
+        "auroc": 0.9534388871093213,
+        "auprc": 0.7608825755983726
+      }
+    },
+    "ari": 0.6741710577475359
+  },
+  "adlb": {
+    "records": 53273,
+    "subjects": 254,
+    "params": 35,
+    "features": 152,
+    "null_flagged": 25,
+    "null_rules": {
+      "any_oor": 229,
+      "clin_sig": 14
+    },
+    "ks": [
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "reps": 8,
+    "power": {
+      "hys_law": {
+        "pipeline": [
+          15.0,
+          62.5,
+          77.5,
+          100.0
+        ],
+        "rule_clin_sig": [
+          2.5,
+          35.0,
+          95.0,
+          100.0
+        ],
+        "rule_any_oor": [
+          100.0,
+          100.0,
+          100.0,
+          100.0
+        ]
+      },
+      "aki_relative": {
+        "pipeline": [
+          15.0,
+          12.5,
+          15.0,
+          50.0
+        ],
+        "rule_clin_sig": [
+          12.5,
+          12.5,
+          12.5,
+          12.5
+        ],
+        "rule_any_oor": [
+          97.5,
+          100.0,
+          100.0,
+          100.0
+        ]
+      },
+      "plt_decline": {
+        "pipeline": [
+          7.5,
+          7.5,
+          5.0,
+          5.0
+        ],
+        "rule_clin_sig": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rule_any_oor": [
+          97.5,
+          97.5,
+          97.5,
+          97.5
+        ]
+      },
+      "anion_gap": {
+        "pipeline": [
+          10.0,
+          12.5,
+          10.0,
+          10.0
+        ],
+        "rule_clin_sig": [
+          17.5,
+          17.5,
+          17.5,
+          17.5
+        ],
+        "rule_any_oor": [
+          97.5,
+          97.5,
+          97.5,
+          97.5
+        ]
+      },
+      "fabricated": {
+        "pipeline": [
+          5.0,
+          2.5,
+          2.5,
+          70.0
+        ],
+        "rule_clin_sig": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rule_any_oor": [
+          92.5,
+          90.0,
+          80.0,
+          52.5
+        ]
+      }
+    },
+    "mean_flagged": {
+      "pipeline": 20.3,
+      "rule_any_oor": 228.5,
+      "rule_clin_sig": 16.8
+    },
+    "fdr_new_k1": {
+      "pipeline": 0.008,
+      "rule_any_oor": 0.808,
+      "rule_clin_sig": 0.277
+    },
+    "auroc_by_k": {
+      "0.25": 0.6105567685589519,
+      "0.5": 0.6708515283842795,
+      "0.75": 0.755764192139738,
+      "1.0": 0.8154366812227074
+    }
+  },
+  "nhanes": {
+    "n": 8253,
+    "records": 354380,
+    "analytes": 43,
+    "n_flagged": 445,
+    "pct_flagged": 5.391978674421423,
+    "flag_top_panel": {
+      "renal": 124,
+      "metabolic": 123,
+      "rbc": 122,
+      "liver": 36,
+      "electrolytes": 34,
+      "wbc_plt": 6
+    },
+    "panel_enrichment": {
+      "renal->kidney_failure": {
+        "cases_in_group": 68,
+        "group_n": 124,
+        "prev_group": 0.5483870967741935,
+        "prev_rest": 0.03198425390576947,
+        "odds_ratio": 36.75082417582418,
+        "p": 5.99921690028177e-64
+      },
+      "renal->dialysis": {
+        "cases_in_group": 25,
+        "group_n": 124,
+        "prev_group": 0.20161290322580644,
+        "prev_rest": 0.0007380981670562184,
+        "odds_ratio": 341.8771043771044,
+        "p": 1.3966314214537543e-41
+      },
+      "liver->liver_condition": {
+        "cases_in_group": 4,
+        "group_n": 36,
+        "prev_group": 0.1111111111111111,
+        "prev_rest": 0.050018254837531945,
+        "odds_ratio": 2.374087591240876,
+        "p": 0.1048761544800976
+      },
+      "liver->cirrhosis": {
+        "cases_in_group": 0,
+        "group_n": 36,
+        "prev_group": 0.0,
+        "prev_rest": 0.0036509675063891934,
+        "odds_ratio": 0.0,
+        "p": 1.0
+      },
+      "liver->viral_hepatitis": {
+        "cases_in_group": 1,
+        "group_n": 36,
+        "prev_group": 0.027777777777777776,
+        "prev_rest": 0.008762322015334063,
+        "odds_ratio": 3.232142857142857,
+        "p": 0.2742353756043333
+      },
+      "metabolic->diabetes": {
+        "cases_in_group": 99,
+        "group_n": 123,
+        "prev_group": 0.8048780487804879,
+        "prev_rest": 0.13837638376383765,
+        "odds_ratio": 25.685,
+        "p": 1.6661120518593244e-60
+      },
+      "metabolic->insulin": {
+        "cases_in_group": 48,
+        "group_n": 123,
+        "prev_group": 0.3902439024390244,
+        "prev_rest": 0.03825338253382534,
+        "odds_ratio": 16.09054662379421,
+        "p": 4.32760014619696e-34
+      }
+    },
+    "flag_enrichment": {
+      "diabetes": {
+        "cases_in_group": 207,
+        "group_n": 445,
+        "prev_group": 0.4651685393258427,
+        "prev_rest": 0.13025102459016394,
+        "odds_ratio": 5.807726630475199,
+        "p": 3.088414381674083e-61
+      },
+      "insulin": {
+        "cases_in_group": 99,
+        "group_n": 445,
+        "prev_group": 0.22247191011235956,
+        "prev_rest": 0.033299180327868855,
+        "odds_ratio": 8.306491774121833,
+        "p": 1.378695578152049e-45
+      },
+      "kidney_failure": {
+        "cases_in_group": 82,
+        "group_n": 445,
+        "prev_group": 0.1842696629213483,
+        "prev_rest": 0.0315061475409836,
+        "odds_ratio": 6.943985307621671,
+        "p": 4.6201333136472075e-34
+      },
+      "dialysis": {
+        "cases_in_group": 28,
+        "group_n": 445,
+        "prev_group": 0.06292134831460675,
+        "prev_rest": 0.00038422131147540983,
+        "odds_ratio": 174.69224620303757,
+        "p": 5.241404046793323e-33
+      },
+      "liver_condition": {
+        "cases_in_group": 38,
+        "group_n": 445,
+        "prev_group": 0.0853932584269663,
+        "prev_rest": 0.04828381147540984,
+        "odds_ratio": 1.840327426534323,
+        "p": 0.0011313056995566639
+      },
+      "cirrhosis": {
+        "cases_in_group": 5,
+        "group_n": 445,
+        "prev_group": 0.011235955056179775,
+        "prev_rest": 0.003201844262295082,
+        "odds_ratio": 3.5377272727272726,
+        "p": 0.020779700099592003
+      },
+      "viral_hepatitis": {
+        "cases_in_group": 5,
+        "group_n": 445,
+        "prev_group": 0.011235955056179775,
+        "prev_rest": 0.008709016393442622,
+        "odds_ratio": 1.2934491978609626,
+        "p": 0.5964282968394274
+      },
+      "heart_failure": {
+        "cases_in_group": 53,
+        "group_n": 445,
+        "prev_group": 0.11910112359550562,
+        "prev_rest": 0.030737704918032786,
+        "odds_ratio": 4.26343537414966,
+        "p": 2.0873379919387875e-15
+      },
+      "cancer": {
+        "cases_in_group": 60,
+        "group_n": 445,
+        "prev_group": 0.1348314606741573,
+        "prev_rest": 0.09810450819672131,
+        "odds_ratio": 1.4327082838832186,
+        "p": 0.014712167413041438
+      },
+      "pregnant": {
+        "cases_in_group": 3,
+        "group_n": 445,
+        "prev_group": 0.006741573033707865,
+        "prev_rest": 0.00934938524590164,
+        "odds_ratio": 0.7191780821917808,
+        "p": 0.7986360720849901
+      }
+    },
+    "dialysis_total": 31,
+    "runtime_s": 77.0724031259997
+  },
+  "calibration": {
+    "HCV-shaped (615 x 10)": {
+      "sims": 10,
+      "n": 615,
+      "features": 10,
+      "mean_false_flags": 7.5,
+      "max_false_flags": 10,
+      "share_sims_any_flag": 1.0,
+      "false_flag_rate_pct": 1.2195121951219512,
+      "p<0.01_rate": 0.027642276422764223,
+      "p<0.05_rate": 0.07252032520325202
+    },
+    "ADLB-shaped (254 x 177)": {
+      "sims": 10,
+      "n": 254,
+      "features": 152,
+      "mean_false_flags": 5.1,
+      "max_false_flags": 16,
+      "share_sims_any_flag": 1.0,
+      "false_flag_rate_pct": 2.0078740157480315,
+      "p<0.01_rate": 0.04566929133858268,
+      "p<0.05_rate": 0.10590551181102363
+    },
+    "NHANES-shaped (2000 x 43)": {
+      "sims": 10,
+      "n": 2000,
+      "features": 43,
+      "mean_false_flags": 25.9,
+      "max_false_flags": 50,
+      "share_sims_any_flag": 0.9,
+      "false_flag_rate_pct": 1.295,
+      "p<0.01_rate": 0.039999999999999994,
+      "p<0.05_rate": 0.0915
+    }
+  },
+  "scaling": {
+    "machine": "Apple M1 Pro, 10 cores, 16 GB RAM",
+    "runs": [
+      {
+        "n": 1000,
+        "features": 43,
+        "records_equiv": 43000,
+        "wall_s": 31.225170582998544,
+        "peak_mb": 638.21875,
+        "flagged": 0,
+        "timings": {
+          "preprocess": 0.018124458998499904,
+          "detect": 2.0843313330005913,
+          "calibrate": 21.494093875000544,
+          "boot_trim": 0.1,
+          "umap_hdbscan": 7.626687208001385
+        }
+      },
+      {
+        "n": 5000,
+        "features": 43,
+        "records_equiv": 215000,
+        "wall_s": 52.02461770900118,
+        "peak_mb": 947.09375,
+        "flagged": 305,
+        "timings": {
+          "preprocess": 0.02775870899859001,
+          "detect": 7.491340332999243,
+          "calibrate": 23.710611374997825,
+          "boot_trim": 0.1,
+          "umap_hdbscan": 20.7917110840026
+        }
+      },
+      {
+        "n": 10000,
+        "features": 43,
+        "records_equiv": 430000,
+        "wall_s": 77.50786349999908,
+        "peak_mb": 936.171875,
+        "flagged": 570,
+        "timings": {
+          "preprocess": 0.039260124998691026,
+          "detect": 10.986841249999998,
+          "calibrate": 35.491558625002654,
+          "boot_trim": 0.1,
+          "umap_hdbscan": 30.986065958000836
+        }
+      },
+      {
+        "n": 25000,
+        "features": 43,
+        "records_equiv": 1075000,
+        "wall_s": 125.31207954099955,
+        "peak_mb": 1016.296875,
+        "flagged": 1201,
+        "timings": {
+          "preprocess": 0.07162525000239839,
+          "detect": 21.249046375000034,
+          "calibrate": 69.6652842500007,
+          "boot_trim": 0.1,
+          "umap_hdbscan": 34.313246375000745
+        }
+      },
+      {
+        "n": 50000,
+        "features": 43,
+        "records_equiv": 2150000,
+        "wall_s": 238.05274204200032,
+        "peak_mb": 1180.671875,
+        "flagged": 2654,
+        "timings": {
+          "preprocess": 0.1252506250020815,
+          "detect": 19.998378749998665,
+          "calibrate": 72.6371528339987,
+          "boot_trim": 0.13468,
+          "umap_hdbscan": 145.27371550000316
+        }
+      }
+    ]
+  }
+}

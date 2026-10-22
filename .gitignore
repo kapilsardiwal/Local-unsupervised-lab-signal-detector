@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+data/
+results/*_scores.csv
+results/*_umap2d.npy
+results/*_log.txt
+results/adlb_*_explain.csv
+out/
+labsignal_out/
+.DS_Store
+.claude/

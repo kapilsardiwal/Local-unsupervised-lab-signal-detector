@@ -1,0 +1,220 @@
+{
+  "records": 53273,
+  "subjects": 254,
+  "params": 35,
+  "features": 152,
+  "panels": {
+    "variability": 30,
+    "liver": 28,
+    "wbc_plt": 24,
+    "renal": 12,
+    "electrolytes": 20,
+    "metabolic": 12,
+    "rbc": 24,
+    "global": 152
+  },
+  "null_flagged": 25,
+  "null_rules": {
+    "any_oor": 229,
+    "clin_sig": 14
+  },
+  "null_explain": [
+    {
+      "subject": "01-701-1211",
+      "panel": "liver",
+      "panel_p": 2.0383025972625646e-07,
+      "drivers": "ALB_rise (-5.8); ALB_fall (-4.5); BILI_trough (+2.2)",
+      "labs": "ALB, BILI"
+    },
+    {
+      "subject": "01-701-1234",
+      "panel": "liver",
+      "panel_p": 6.367862626088794e-07,
+      "drivers": "ALP_fall (-7.6); BILI_rise (+4.9); BILI_fall (+8.1)",
+      "labs": "ALP, BILI"
+    },
+    {
+      "subject": "01-701-1302",
+      "panel": "metabolic",
+      "panel_p": 1.531122881537339e-06,
+      "drivers": "CK_peak (+5.4); CK_fall (-7.9); CK_rise (+5.4)",
+      "labs": "CK"
+    },
+    {
+      "subject": "01-701-1345",
+      "panel": "metabolic",
+      "panel_p": 2.147305009470024e-06,
+      "drivers": "CK_rise (+9.7); CK_peak (+5.3); CHOL_fall (-1.1)",
+      "labs": "CK, CHOL"
+    },
+    {
+      "subject": "01-704-1218",
+      "panel": "metabolic",
+      "panel_p": 1.0724194308142643e-06,
+      "drivers": "GLUC_peak (+6.9); GLUC_rise (+5.5); GLUC_trough (+4.8)",
+      "labs": "GLUC"
+    },
+    {
+      "subject": "01-704-1332",
+      "panel": "liver",
+      "panel_p": 3.601828742982871e-06,
+      "drivers": "AST_rise (-7.2); GGT_fall (+6.0); AST_fall (-6.1)",
+      "labs": "AST, GGT"
+    },
+    {
+      "subject": "01-705-1031",
+      "panel": "wbc_plt",
+      "panel_p": 7.458251516379022e-09,
+      "drivers": "BASO_rise (+12.1); BASO_fall (+8.2); BASO_trough (-4.8)",
+      "labs": "BASO"
+    },
+    {
+      "subject": "01-705-1186",
+      "panel": "liver",
+      "panel_p": 2.569056078982612e-13,
+      "drivers": "AST_peak (+7.6); BILI_peak (+7.3); ALP_trough (+9.8)",
+      "labs": "AST, BILI, ALP"
+    },
+    {
+      "subject": "01-705-1282",
+      "panel": "wbc_plt",
+      "panel_p": 2.695397738339267e-09,
+      "drivers": "MONO_trough (-8.0); MONO_fall (-12.4); EOS_fall (-6.9)",
+      "labs": "MONO, EOS"
+    },
+    {
+      "subject": "01-705-1292",
+      "panel": "rbc",
+      "panel_p": 1.1292157819919879e-08,
+      "drivers": "HCT_fall (-6.9); RBC_fall (-8.7); HGB_fall (-7.6)",
+      "labs": "HCT, RBC, HGB"
+    },
+    {
+      "subject": "01-705-1310",
+      "panel": "variability",
+      "panel_p": 5.551115123125783e-17,
+      "drivers": "GGT_cv (+25.0); AST_cv (+23.1); ALT_cv (+21.4)",
+      "labs": "GGT, AST, ALT"
+    },
+    {
+      "subject": "01-705-1349",
+      "panel": "liver",
+      "panel_p": 1.7875000368761107e-08,
+      "drivers": "ALB_trough (-5.7); ALP_peak (+5.3); ALB_peak (-3.0)",
+      "labs": "ALB, ALP"
+    },
+    {
+      "subject": "01-708-1158",
+      "panel": "variability",
+      "panel_p": 1.8918200339612667e-13,
+      "drivers": "URATE_cv (+7.2); MCH_cv (+13.8); CHOL_cv (+10.4)",
+      "labs": "URATE, MCH, CHOL"
+    },
+    {
+      "subject": "01-708-1216",
+      "panel": "rbc",
+      "panel_p": 8.142603258320946e-11,
+      "drivers": "MCV_peak (-5.9); MCH_peak (-7.9); MCV_trough (-6.5)",
+      "labs": "MCV, MCH"
+    },
+    {
+      "subject": "01-708-1286",
+      "panel": "variability",
+      "panel_p": 5.551115123125783e-17,
+      "drivers": "AST_cv (+25.0); ALT_cv (+20.4); GGT_cv (+15.7)",
+      "labs": "AST, ALT, GGT"
+    },
+    {
+      "subject": "01-709-1301",
+      "panel": "metabolic",
+      "panel_p": 1.1576350988917739e-11,
+      "drivers": "GLUC_fall (-10.1); GLUC_peak (+6.0); CHOL_fall (-7.7)",
+      "labs": "GLUC, CHOL"
+    },
+    {
+      "subject": "01-709-1339",
+      "panel": "liver",
+      "panel_p": 5.551115123125783e-17,
+      "drivers": "ALP_rise (+24.0); ALP_peak (+8.8); ALB_trough (-2.0)",
+      "labs": "ALP, ALB"
+    },
+    {
+      "subject": "01-710-1021",
+      "panel": "variability",
+      "panel_p": 2.451530069391694e-06,
+      "drivers": "CL_cv (+7.9); HCT_cv (+6.2); WBC_cv (+5.9)",
+      "labs": "CL, HCT, WBC"
+    },
+    {
+      "subject": "01-710-1264",
+      "panel": "wbc_plt",
+      "panel_p": 4.9399357437973634e-08,
+      "drivers": "BASO_rise (+11.4); BASO_fall (+9.2); BASO_trough (-4.8)",
+      "labs": "BASO"
+    },
+    {
+      "subject": "01-710-1368",
+      "panel": "variability",
+      "panel_p": 6.361901875862053e-07,
+      "drivers": "ALP_cv (+14.7); RBC_cv (+5.1); ALB_cv (+2.7)",
+      "labs": "ALP, RBC, ALB"
+    },
+    {
+      "subject": "01-711-1036",
+      "panel": "renal",
+      "panel_p": 2.902393819892435e-06,
+      "drivers": "CREAT_fall (-4.7); URATE_fall (-5.3); CREAT_rise (-4.2)",
+      "labs": "CREAT, URATE"
+    },
+    {
+      "subject": "01-713-1141",
+      "panel": "variability",
+      "panel_p": 2.6277728215617913e-08,
+      "drivers": "ALP_cv (+13.5); PHOS_cv (+4.8); K_cv (+3.4)",
+      "labs": "ALP, PHOS, K"
+    },
+    {
+      "subject": "01-716-1071",
+      "panel": "electrolytes",
+      "panel_p": 3.0176055851871553e-06,
+      "drivers": "SODIUM_rise (+5.2); SODIUM_peak (+4.8); CA_peak (+3.5)",
+      "labs": "SODIUM, CA"
+    },
+    {
+      "subject": "01-717-1357",
+      "panel": "rbc",
+      "panel_p": 8.423380365440991e-07,
+      "drivers": "MCV_fall (-9.0); MCHC_rise (+2.9); MCV_rise (-3.4)",
+      "labs": "MCV, MCHC"
+    },
+    {
+      "subject": "01-718-1427",
+      "panel": "wbc_plt",
+      "panel_p": 4.5264604592309965e-07,
+      "drivers": "BASO_rise (+7.4); MONO_rise (+4.1); MONO_fall (+5.7)",
+      "labs": "BASO, MONO"
+    }
+  ],
+  "auroc_by_k": {
+    "0.25": 0.6105567685589519,
+    "0.5": 0.6708515283842795,
+    "0.75": 0.755764192139738,
+    "1.0": 0.8154366812227074
+  },
+  "patterns": {
+    "hys_law": "ALT and AST rise to 3-6x ULN with bilirubin 2-3x ULN (positive control)",
+    "aki_relative": "creatinine rises to 1.5-2.0x baseline, BUN follows (KDIGO stage 1)",
+    "plt_decline": "platelets fall 35-50% from baseline but stay above LLN",
+    "anion_gap": "sodium drifts to high-normal, chloride to low-normal; every value in range",
+    "fabricated": "post-baseline values copied from baseline (zero within-subject variation)"
+  },
+  "reps": 8,
+  "per_pattern": 5,
+  "timings_s": {
+    "preprocess": 0.05060504199900606,
+    "detect": 2.320334833999368,
+    "calibrate": 46.59655183299947,
+    "boot_trim": 0.1,
+    "umap_hdbscan": 5.194187541999781
+  }
+}
