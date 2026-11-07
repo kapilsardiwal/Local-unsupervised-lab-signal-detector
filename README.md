@@ -2,7 +2,7 @@
 
 `labsignal` is a local, LLM-free, unsupervised tool for finding atypical subjects in large lab datasets (ADLB or any long-format lab table). Patient-level data never leaves the machine: no API calls, no tokens, no telemetry.
 
-Presented at BBSW 2026 (Foster City, CA) by Kapil Sardiwal, Manager, Biostatistics, Kite Pharma, a Gilead Company. All results below use public data only.
+Presented at BBSW 2026 (Foster City, CA) by Kapil Sardiwal. All results below use public data only.
 
 ```
 lab records ──► subject features ──► organ-panel detectors ──► calibrated flags ──► explanations
@@ -79,7 +79,7 @@ McInnes, Healy & Melville (2018) UMAP · Campello, Moulavi & Sander (2013) HDBSC
 
 ## Contact
 
-Kapil Sardiwal · kapil.sardiwal@gilead.com
+Kapil Sardiwal · kapil.sardiws@gmail.com
 
 ## License
 
